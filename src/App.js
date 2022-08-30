@@ -1,12 +1,27 @@
-// import logo from "./logo.svg";
-// import "./App.css";
-
 import Task from "components/Task";
+
+const data = [
+  {
+    id: 1,
+    title: "Get groceries",
+    content: "Buy orange juice, flour and salt",
+    time: "11:00 AM",
+  },
+  {
+    id: 2,
+    title: "Go for a jog",
+    content: "Wake up at 5:30 AM and go for a jog",
+    time: "05:30 AM",
+  },
+];
 
 function App() {
   return (
     <div>
-      <Task />
+      {data.map(({ id, title, content, time }) => {
+        return <Task id={id} title={title} content={content} time={time} />;
+      })}
+      {/* <Task /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
