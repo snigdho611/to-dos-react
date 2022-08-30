@@ -30,8 +30,7 @@
     </div>
     <script>
       document.addEventListener("click", (e) => {
-        // console.log(e.target.tagName);
-        if (e.target.tagName === "BUTTON") {
+        if (e.target.tagName === "BUTTON" && e.target.innerText === "X") {
           let list = document.getElementById("list");
           let item = document.getElementById(e.target.parentElement.id);
           list.removeChild(item);
