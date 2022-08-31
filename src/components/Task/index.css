@@ -2,7 +2,12 @@
   display: flex;
   gap: 2rem;
   width: 50%;
-  background-color: rgba(63, 204, 209, 0.815);
+  /* background-color: rgba(119, 242, 247, 0.815); */
+  background-image: linear-gradient(
+    to right,
+    rgba(119, 242, 247, 0.615),
+    rgba(72, 178, 182, 0.815)
+  );
   padding: 0.75rem;
   margin: 0.25rem auto;
   border-radius: 0.5rem;
@@ -17,6 +22,11 @@
 
 .task__desc {
   width: 70%;
+}
+
+.task__desc__title {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .task__time {
@@ -48,7 +58,7 @@
 
 .task__btn__check {
   background-image: url("/public/check-mark.png");
-  background-color: rgba(112, 221, 102, 0.849);
+  background-color: rgb(136, 241, 127, 0.5);
 }
 
 .task__btn__cross {
@@ -58,7 +68,7 @@
 
 .task__btn__check:hover {
   background-image: url("/public/check-mark.png");
-  background-color: rgba(180, 238, 174, 0.849);
+  background-color: rgb(136, 241, 127);
 }
 
 .task__btn__cross:hover {

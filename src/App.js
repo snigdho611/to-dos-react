@@ -1,4 +1,5 @@
 import Task from "components/Task";
+import { useEffect, useState } from "react";
 
 const data = [
   {
@@ -9,33 +10,60 @@ const data = [
   },
   {
     id: 2,
+    title: "Go for laptop repairs",
+    content: "Go to the local computer store for laptop repairs",
+    time: "12:00 PM",
+  },
+  {
+    id: 3,
     title: "Go for a jog",
     content: "Wake up at 5:30 AM and go for a jog",
     time: "05:30 AM",
   },
 ];
-
 function App() {
+  const [list, setList] = useState(data);
+  useEffect(() => {}, []);
+
+  const completedToDo = (id) => {
+    console.log(id);
+  };
+
+  const deleteToDo = (id) => {
+    console.log(data.filter((element) => element.id !== id));
+    setList(list.filter((element) => element.id !== id));
+    //
+  };
+
   return (
     <div>
-      {data.map(({ id, title, content, time }) => {
-        return <Task id={id} title={title} content={content} time={time} />;
-      })}
-      {/* <Task /> */}
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      {list.length > 0 ? (
+        list.map(({ id, title, content, time }, i) => {
+          return (
+            <Task
+              key={i}
+              id={id}
+              title={title}
+              content={content}
+              time={time}
+              completedToDo={completedToDo}
+              deleteToDo={deleteToDo}
+            />
+          );
+        })
+      ) : (
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+            fontWeight: "bold",
+            color: "red",
+          }}
         >
-          Learn React
-        </a>
-      </header> */}
+          No items to show
+        </div>
+      )}
     </div>
   );
 }
