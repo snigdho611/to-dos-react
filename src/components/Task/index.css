@@ -1,7 +1,7 @@
 .task {
   display: flex;
   gap: 2rem;
-  width: 50%;
+  width: 60%;
   /* background-color: rgba(119, 242, 247, 0.815); */
   background-image: linear-gradient(
     to right,
@@ -11,6 +11,10 @@
   padding: 0.75rem;
   margin: 0.25rem auto;
   border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(76, 0, 130, 0.486);
+  /* box-shadow: 1px 0px 2px black; */
 }
 
 .task__id {
