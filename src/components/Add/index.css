@@ -30,8 +30,17 @@
 .add__btn {
   /* width: %; */
   font-size: 1.5rem;
-  width: 2.5rem;
+  width: 1.75rem;
   height: 2.5rem;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-position: center;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.25s background-color;
+  background-image: url("/public/plus.png");
 }
 
 .add__time {

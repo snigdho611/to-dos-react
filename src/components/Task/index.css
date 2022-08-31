@@ -1,12 +1,12 @@
 .task {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   width: 60%;
   /* background-color: rgba(119, 242, 247, 0.815); */
   background-image: linear-gradient(
     to right,
-    rgba(119, 242, 247, 0.615),
-    rgba(72, 178, 182, 0.815)
+    rgba(179, 196, 241, 0.925),
+    rgba(97, 119, 248, 0.815)
   );
   padding: 0.75rem;
   margin: 0.25rem auto;

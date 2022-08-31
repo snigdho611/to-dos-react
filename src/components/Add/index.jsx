@@ -21,7 +21,7 @@ const Add = ({ newItem, setNewItem, addToDo }) => {
                     return { ...prevItem, time: e.target.value }
                 })
             }} className='add__time' type={"datetime-local"} />
-            <button onClick={() => { addToDo() }} className='add__btn'></button>
+            <button onClick={() => { addToDo() }} className='add__btn'/>
         </div>
     )
 }
