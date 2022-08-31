@@ -1,0 +1,28 @@
+.add {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.add input {
+  /* width: 100%; */
+  font-size: 1.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.add__title {
+  width: 30%;
+}
+.add__desc {
+  width: 50%;
+}
+
+.add__btn {
+  /* width: %; */
+  font-size: 1.5rem;
+  width: 2.5rem;
+}
+
+.add__btn button {
+  /* width: 100%; */
+}

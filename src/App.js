@@ -1,3 +1,4 @@
+import Add from "components/Add";
 import Task from "components/Task";
 import { useEffect, useState } from "react";
 
@@ -21,6 +22,7 @@ const data = [
     time: "05:30 AM",
   },
 ];
+
 function App() {
   const [list, setList] = useState(data);
   useEffect(() => {}, []);
@@ -37,6 +39,7 @@ function App() {
 
   return (
     <div>
+      <Add />
       {list.length > 0 ? (
         list.map(({ id, title, content, time }, i) => {
           return (
