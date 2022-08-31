@@ -4,12 +4,15 @@
   width: 50%;
   background-color: rgba(63, 204, 209, 0.815);
   padding: 0.75rem;
+  margin: 0.25rem auto;
+  border-radius: 0.5rem;
 }
 
 .task__id {
   width: 5%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .task__desc {
@@ -18,10 +21,47 @@
 
 .task__time {
   width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .task__btn {
   width: 10%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.task__btn button {
+  width: 40%;
+  height: 70%;
+  padding: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-position: center;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.25s background-color;
+}
+
+.task__btn__check {
+  background-image: url("/public/check-mark.png");
+  background-color: rgba(112, 221, 102, 0.849);
+}
+
+.task__btn__cross {
+  background-image: url("/public/cross-mark.png");
+  background-color: rgba(221, 102, 102, 0.849);
+}
+
+.task__btn__check:hover {
+  background-image: url("/public/check-mark.png");
+  background-color: rgba(180, 238, 174, 0.849);
+}
+
+.task__btn__cross:hover {
+  background-image: url("/public/cross-mark.png");
+  background-color: rgba(228, 152, 152, 0.849);
 }

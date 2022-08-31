@@ -10,8 +10,8 @@ const Task = ({ id, title, content, time }) => {
                 <div className='task__desc__content'>{content ? content : null}</div>
             </div>
             <div className='task__time'>{time ? time : null}</div>
-            <div className='task__btn'><button>tick</button></div>
-            <div className='task__btn'><button>cross</button></div>
+            <div className='task__btn'><button className='task__btn__check' /></div>
+            <div className='task__btn'><button className='task__btn__cross' /></div>
         </div>
     )
 }
