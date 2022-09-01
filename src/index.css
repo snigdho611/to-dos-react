@@ -24,3 +24,11 @@ code {
   color: white;
   text-align: center;
 }
+
+.noTasks {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-weight: bold;
+  color: lime;
+}

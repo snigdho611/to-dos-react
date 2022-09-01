@@ -108,32 +108,10 @@ function App() {
           }
         })
       ) : (
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "center",
-            fontWeight: "bold",
-            color: "lime",
-          }}
-        >
-          No tasks to show
-        </div>
+        <div className="noTasks">No tasks to show</div>
       );
     if (list.length === counter) {
-      return (
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "center",
-            fontWeight: "bold",
-            color: "lime",
-          }}
-        >
-          No tasks to show
-        </div>
-      );
+      return <div className="noTasks">No tasks to show</div>;
     }
     return renderList;
   };
@@ -143,37 +121,6 @@ function App() {
       <h1 className="header1">To Do List</h1>
       <Add setNewItem={setNewItem} newItem={newItem} addToDo={addToDo} />
       <Errors message={errors} />
-      {/* {list.length > 0 ? (
-        list.map(({ id, title, content, time, status }, i) => {
-          if (!status) {
-            return (
-              <Task
-                key={i}
-                id={id}
-                title={title}
-                content={content}
-                time={time}
-                completedToDo={completedToDo}
-                deleteToDo={deleteToDo}
-              />
-            );
-          } else {
-            return null;
-          }
-        })
-      ) : (
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "center",
-            fontWeight: "bold",
-            color: "lime",
-          }}
-        >
-          No tasks to show
-        </div>
-      )} */}
       {generateList()}
       <Counter total={totalCompleted} />
     </div>
