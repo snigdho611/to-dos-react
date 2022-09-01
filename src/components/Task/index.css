@@ -2,19 +2,13 @@
   display: flex;
   gap: 1rem;
   width: 60%;
-  /* background-color: rgba(119, 242, 247, 0.815); */
-  background-image: linear-gradient(
-    to right,
-    rgba(179, 196, 241, 0.925),
-    rgba(97, 119, 248, 0.815)
-  );
+  background-image: linear-gradient(to right, rgba(167, 215, 255, 0.8), rgba(160, 241, 255, 0.8));
   padding: 0.75rem;
   margin: 0.25rem auto;
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(76, 0, 130, 0.486);
-  /* box-shadow: 1px 0px 2px black; */
 }
 
 .task__id {
@@ -26,6 +20,7 @@
 
 .task__desc {
   width: 70%;
+  white-space: pre-line;
 }
 
 .task__desc__title {

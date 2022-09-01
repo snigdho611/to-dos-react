@@ -1,5 +1,5 @@
 .add {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -8,7 +8,6 @@
 }
 
 .add input {
-  /* width: 100%; */
   padding: 0.25rem 0.75rem;
 }
 
@@ -17,6 +16,7 @@
   font-size: 1.5rem;
   height: 3.25rem;
 }
+
 .add__desc {
   width: 50%;
   padding: 0.25rem 0.75rem;
@@ -24,15 +24,13 @@
   resize: none;
   height: 3.5rem;
   display: flex;
-  /* align-content: center; */
 }
 
 .add__btn {
-  /* width: %; */
   font-size: 1.5rem;
   width: 1.75rem;
-  height: 2.5rem;
-  background-color: transparent;
+  height: 1.75rem;
+  background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
@@ -46,4 +44,24 @@
 .add__time {
   width: 15%;
   height: 2.5rem;
+}
+
+.add__title,
+.add__desc,
+.add__time {
+  background-color: rgba(204, 255, 199, 0.842);
+  height: 4.5rem;
+  outline: none;
+  color: rgb(21, 0, 36);
+  transition: 0.25s background-color;
+}
+
+.add__title:hover,
+.add__desc:hover,
+.add__time:hover,
+.add__title:focus,
+.add__desc:focus,
+.add__time:focus {
+  background-color: rgba(168, 219, 164, 0.842);
+  color: rgb(4, 4, 49);
 }

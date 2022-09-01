@@ -60,7 +60,7 @@ function App() {
     setList((prevState) => [
       ...prevState,
       {
-        id: data[data.length - 1].id + 1,
+        id: list.length > 0 ? list[list.length - 1].id + 1 : 1,
         title: newItem.title,
         content: newItem.content,
         time: newItem.time,
@@ -114,10 +114,10 @@ function App() {
             width: "100%",
             justifyContent: "center",
             fontWeight: "bold",
-            color: "red",
+            color: "lime",
           }}
         >
-          No items to show
+          No tasks to show
         </div>
       )}
       <Counter total={totalCompleted} />
