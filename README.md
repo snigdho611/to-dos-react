@@ -8,4 +8,5 @@ To run the app, open the command line from the root directory (where the package
 
 The application will be available for access at the `port: 3000`
 
-<image url=""/>
+Below is a screenshot of the application's view:
+![image](https://raw.githubusercontent.com/snigdho611/to-dos-react/main/public/sample.png)
