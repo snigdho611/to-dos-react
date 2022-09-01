@@ -19,3 +19,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.header1 {
+  color: white;
+  text-align: center;
+}
